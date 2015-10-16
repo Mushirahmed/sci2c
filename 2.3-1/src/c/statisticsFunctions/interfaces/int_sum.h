@@ -44,7 +44,7 @@
 
 #define u162sumu160(in,size)                    u16suma(in, size[0]*size[1])
 
-#define i82sumu80(in,size)                      i8suma(in, size[0]*size[1])
+#define i82sumi80(in,size)                      i8suma(in, size[0]*size[1])
 
 #define i162sumi160(in,size)                    i16suma(in, size[0]*size[1])
 
