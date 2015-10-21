@@ -300,8 +300,10 @@
 
 /* interfacing max */
 #include "statMax.h"
+#include "int_statMax.h"
 /* interfacing min */
 #include "statMin.h"
+#include "int_statMin.h"
 /* interfacing mean */
 #include "mean.h"
 #include "int_mean.h"
