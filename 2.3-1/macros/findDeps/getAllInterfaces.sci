@@ -87,6 +87,7 @@ function allInterfaces = getAllInterfaces(OutFormat)
       "src/c/statisticsFunctions/interfaces/int_prod.h"
       "src/c/statisticsFunctions/interfaces/int_variance.h"
       "src/c/statisticsFunctions/interfaces/int_statMax.h"
+      "src/c/statisticsFunctions/interfaces/int_statMin.h"
       "src/c/statisticsFunctions/interfaces/int_sum.h"
       "src/c/operations/interfaces/int_OpEqual.h"
       "src/c/operations/interfaces/int_OpLogNot.h"
