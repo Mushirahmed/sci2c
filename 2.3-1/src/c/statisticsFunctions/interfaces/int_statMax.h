@@ -14,6 +14,8 @@
 
 #ifndef __INT_STATMAX_H__
 #define __INT_STATMAX_H__
+//#ifndef __INT_MAX_H__
+//#define __INT_MAX_H__
 
 #define s0maxs0(in)				smaxs(in)
 
@@ -30,7 +32,6 @@
 #define i80maxi80(in)				i8maxs(in)
 
 #define i160maxi160(in)				i16maxs(in)
-
 
 #define s2maxs0(in,size)			smaxa(in, size[0]*size[1])
 
@@ -64,6 +65,14 @@
 
 #define i160i160maxi160(in1,in2)		(in2==1) ? i16rowmaxs(in1) : i16columnmaxs(in1)	
 
+#define s0s2maxs2(in1,size,in2,out)             (in2==1) ? srowmaxa(in1,size[0],size[1],out) : scolumnmaxa(in1,size[0],size[1],out)
+
+#define d0d2maxd2(in1,size,in2,out)             (in2==1) ? drowmaxa(in1,size[0],size[1],out) : dcolumnmaxa(in1,size[0],size[1],out)
+
+#define c0c2maxc2(in1,size,in2,out)             (in2==1) ? crowmaxa(in1,size[0],size[1],out) : ccolumnmaxa(in1,size[0],size[1],out)
+
+#define z0z2maxz2(in1,size,in2,out)             (in2==1) ? zrowmaxa(in1,size[0],size[1],out) : zcolumnmaxa(in1,size[0],size[1],out)
+
 #define s2s0maxs2(in1,size,in2,out)		(in2==1) ? srowmaxa(in1,size[0],size[1],out) : scolumnmaxa(in1,size[0],size[1],out)	
 
 #define d2d0maxd2(in1,size,in2,out)		(in2==1) ? drowmaxa(in1,size[0],size[1],out) : dcolumnmaxa(in1,size[0],size[1],out)
@@ -72,13 +81,37 @@
 
 #define z2d0maxz2(in1,size,in2,out)		(in2==1) ? zrowmaxa(in1,size[0],size[1],out) : zcolumnmaxa(in1,size[0],size[1],out)
 
+#define s2s2maxs2(in1,size1,in2,size2,out)	(in2==1) ? srowmaxa(in1,size1[0],size1[1],out) : scolumnmaxa(in1,size1[0],size1[1],out)
+
+#define d2d2maxd2(in1,size1,in2,size2,out)	(in2==1) ? drowmaxa(in1,size1[0],size1[1],out) : dcolumnmaxa(in1,size1[0],size1[1],out)
+
+#define c2c2maxc2(in1,size1,in2,size2,out)	(in2==1) ? crowmaxa(in1,size1[0],size1[1],out) : ccolumnmaxa(in1,size1[0],size1[1],out)
+
+#define z2z2maxz2(in1,size1,in2,size2,out)	(in2==1) ? zrowmaxa(in1,size1[0],size1[1],out) : zcolumnmaxa(in1,size1[0],size1[1],out)
+
 #define u82u80maxu82(in1,size,in2,out)		(in2==1) ? u8rowmaxa(in1,size[0],size[1],out) : u8columnmaxa(in1,size[0],size[1],out)
+
+#define u80u82maxu82(in1,size,in2,out)		(in2==1) ? u8rowmaxa(in1,size[0],size[1],out) : u8columnmaxa(in1,size[0],size[1],out)
+
+#define u82u82maxu82(in1,size1,in2,size2,out)	(in2==1) ? u8rowmaxa(in1,size1[0],size1[1],out) : u8columnmaxa(in1,size1[0],size1[1],out)
 
 #define u162u160maxu162(in1,size,in2,out)	(in2==1) ? u16rowmaxa(in1,size[0],size[1],out) : u16columnmaxa(in1,size[0],size[1],out)
 
+#define u160u162maxu162(in1,size,in2,out)       (in2==1) ? u16rowmaxa(in1,size[0],size[1],out) : u16columnmaxa(in1,size[0],size[1],out)
+
+#define u162u162maxu162(in1,size1,in2,size2,out) (in2==1) ? u16rowmaxa(in1,size1[0],size1[1],out) : u16columnmaxa(in1,size1[0],size1[1],out)
+
 #define i82i80maxi82(in1,size,in2,out)		(in2==1) ? i8rowmaxa(in1,size[0],size[1],out) : i8columnmaxa(in1,size[0],size[1],out)
 
+#define i80i82maxi82(in1,size,in2,out)		(in2==1) ? i8rowmaxa(in1,size[0],size[1],out) : i8columnmaxa(in1,size[0],size[1],out)
+
+#define i82i82maxi82(in1,size1,in2,size2,out)	(in2==1) ? i8rowmaxa(in1,size1[0],size1[1],out) : i8columnmaxa(in1,size1[0],size1[1],out)
+
 #define i162i160maxi162(in1,size,in2,out)	(in2==1) ? i16rowmaxa(in1,size[0],size[1],out) : i16columnmaxa(in1,size[0],size[1],out)
+
+#define i160i162maxi162(in1,size,in2,out)	(in2==1) ? i16rowmaxa(in1,size[0],size[1],out) : i16columnmaxa(in1,size[0],size[1],out)
+
+#define i162i162maxi162(in1,size1,in2,size2,out) (in2==1) ? i16rowmaxa(in1,size1[0],size1[1],out) : i16columnmaxa(in1,size1[0],size1[1],out)
 	
 /*'r'  and 'c' case  */	
 #define s0g2maxs0(in1,in2,size2)			(in2[0]=='r') ? srowmaxs(in1) : scolumnmaxs(in1)	
@@ -112,7 +145,7 @@
 	
 #define i82g2maxi82(in1,size,in2,size2,out)		(in2[0]=='r') ? i8rowmaxa(in1,size[0],size[1],out) : i8columnmaxa(in1,size[0],size[1],out)	
 
-#define i162g2maxu162(in1,size,in2,size2,out)		(in2[0]=='r') ? i16rowmaxa(in1,size[0],size[1],out) : i16columnmaxa(in1,size[0],size[1],out)
+#define i162g2maxi162(in1,size,in2,size2,out)		(in2[0]=='r') ? i16rowmaxa(in1,size[0],size[1],out) : i16columnmaxa(in1,size[0],size[1],out)
 	
 
 

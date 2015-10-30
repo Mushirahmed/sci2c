@@ -73,25 +73,46 @@
 
 #define z2d0minz2(in1,size,in2,out)		(in2==1) ? zrowmina(in1,size[0],size[1],out) : zcolumnmina(in1,size[0],size[1],out)
 
+#define s0s2mins2(in1,size,in2,out)             (in2==1) ? srowmina(in1,size[0],size[1],out) : scolumnmina(in1,size[0],size[1],out)
+
+#define d0d2mind2(in1,size,in2,out)             (in2==1) ? drowmina(in1,size[0],size[1],out) : dcolumnmina(in1,size[0],size[1],out)
+
+#define c0c2minc2(in1,size,in2,out)             (in2==1) ? crowmina(in1,size[0],size[1],out) : ccolumnmina(in1,size[0],size[1],out)
+
+#define z0z2minz2(in1,size,in2,out)             (in2==1) ? zrowmina(in1,size[0],size[1],out) : zcolumnmina(in1,size[0],size[1],out)
+
+#define s2s2mins2(in1,size1,in2,size2,out)	(in2==1) ? srowmina(in1,size1[0,size[1],out]) : scolumnmina(in1,size1[0],size1[0],out)
+
+#define d2d2mind2(in1,size1,in2,size2,out)	(in2==1) ? drowmina(in1,size1[0,size[1],out]) : dcolumnmina(in1,size1[0],size1[0],out)
+
+#define c2c2minc2(in1,size1,in2,size2,out)	(in2==1) ? crowmina(in1,size1[0,size[1],out]) : ccolumnmina(in1,size1[0],size1[0],out)
+
+#define z2z2minz2(in1,size1,in2,size2,out)	(in2==1) ? zrowmina(in1,size1[0,size[1],out]) : zcolumnmina(in1,size1[0],size1[0],out)
+
 #define u82u80minu82(in1,size,in2,out)		(in2==1) ? u8rowmina(in1,size[0],size[1],out) : u8columnmina(in1,size[0],size[1],out)
 
 #define u80u82minu82(in1,size,in2,out)		(in2==1) ? u8rowmina(in1,size[0],size[1],out) : u8columnmina(in1,size[0],size[1],out)
 
-#define u82u82minu82(in1,size,in2,out)		(in2==1) ? u8rowmina(in1,size[0],size[1],out) : u8columnmina(in1,size[0],size[1],out)
+#define u82u82minu82(in1,size1,in2,size2,out)	(in2==1) ? u8rowmina(in1,size1[0],size1[1],out) : u8columnmina(in1,size1[0],size1[1],out)
 
 #define u162u160minu162(in1,size,in2,out)	(in2==1) ? u16rowmina(in1,size[0],size[1],out) : u16columnmina(in1,size[0],size[1],out)
+
+#define u160u162minu162(in1,size,in2,out)       (in2==1) ? u16rowmina(in1,size[0],size[1],out) : u16columnmina(in1,size[0],size[1],out)
+
+#define u162u162minu162(in1,size1,in2,size2,out) (in2==1) ? u16rowmina(in1,size1[0],size1[1],out) : u16columnmina(in1,size1[0],size1[1],out)
 
 #define i82i80mini82(in1,size,in2,out)		(in2==1) ? i8rowmina(in1,size[0],size[1],out) : i8columnmina(in1,size[0],size[1],out)
 
 #define i80i82mini82(in1,size,in2,out)		(in2==1) ? i8rowmina(in1,size[0],size[1],out) : i8columnmina(in1,size[0],size[1],out)
 
-#define i82i82mini82(in1,size,in2,out)		(in2==1) ? i8rowmina(in1,size[0],size[1],out) : i8columnmina(in1,size[0],size[1],out)
+#define i82i82mini82(in1,size1,in2,size2,out)	(in2==1) ? i8rowmina(in1,size1[0],size1[1],out) : i8columnmina(in1,size1[0],size1[1],out)
 
 #define i162i160mini162(in1,size,in2,out)	(in2==1) ? i16rowmina(in1,size[0],size[1],out) : i16columnmina(in1,size[0],size[1],out)
 
 #define i160i162mini162(in1,size,in2,out)	(in2==1) ? i16rowmina(in1,size[0],size[1],out) : i16columnmina(in1,size[0],size[1],out)
 
-#define i162i162mini162(in1,size,in2,out)	(in2==1) ? i16rowmina(in1,size[0],size[1],out) : i16columnmina(in1,size[0],size[1],out)
+#define i162i162mini162(in1,size1,in2,size2,out) (in2==1) ? i16rowmina(in1,size1[0],size1[1],out) : i16columnmina(in1,size1[0],size1[1],out)
+	
 	
 /*'r'  and 'c' case  */	
 #define s0g2mins0(in1,in2,size2)			(in2[0]=='r') ? srowmins(in1) : scolumnmins(in1)	
@@ -125,7 +146,7 @@
 	
 #define i82g2mini82(in1,size,in2,size2,out)		(in2[0]=='r') ? i8rowmina(in1,size[0],size[1],out) : i8columnmina(in1,size[0],size[1],out)	
 
-#define i162g2minu162(in1,size,in2,size2,out)		(in2[0]=='r') ? i16rowmina(in1,size[0],size[1],out) : i16columnmina(in1,size[0],size[1],out)
+#define i162g2mini162(in1,size,in2,size2,out)		(in2[0]=='r') ? i16rowmina(in1,size[0],size[1],out) : i16columnmina(in1,size[0],size[1],out)
 	
 
 
