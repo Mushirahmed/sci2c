@@ -16,7 +16,7 @@
 
 int16 i16proda(int16 *in, int size) {
   //floatComplex accumulate = in[0];
-  int16 accumulate = 0;
+  int16 accumulate = in[0];
   int i = 0;
 
   

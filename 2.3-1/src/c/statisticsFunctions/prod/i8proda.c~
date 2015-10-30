@@ -16,7 +16,7 @@
 
 int8 i8proda(int8 *in, int size) {
   //floatComplex accumulate = in[0];
-   int8 accumulate = 0;
+   int8 accumulate = in[0];
   int i = 0;
 
   
