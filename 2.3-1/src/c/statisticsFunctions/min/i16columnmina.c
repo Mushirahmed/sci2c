@@ -16,9 +16,10 @@ void i16columnmina(int16 *in, int rows, int columns, int16* out) {
   int i = 0, j = 0;
 
   for (i = 0; i < rows; i++) {
-	  out[i]=in[i];
+	  out[i]=(int16)in[i*columns];
 	  for (j=0;j<columns;j++)
-      		if (in[i+j*rows]<out[i]) out[i] = (int16)in[i+j*rows];
+      		if (in[i+j*rows]<out[i]) 
+                   out[i] = (int16)in[i+j*rows];
     }
 
 }

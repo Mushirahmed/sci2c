@@ -18,7 +18,8 @@ uint16 u16mina(uint16 *in, int size) {
 
   for (i = 1; i < size; ++i)
     {
-      if (in[i]<out) out = (uint16)in[i];
+      if (in[i]<out) 
+         out = (uint16)in[i];
     }
   return out;
 
