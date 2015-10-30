@@ -25,7 +25,7 @@ extern "C" {
 */
 #define		smins(in)			in
 #define		srowmins(in)			in
-#define		scolumnmins(in)		in
+#define		scolumnmins(in)		        in
 #define		smatlabmins(in)			in
 
 /*
@@ -33,8 +33,28 @@ extern "C" {
 */
 #define		dmins(in)			in
 #define		drowmins(in)			in
-#define		dcolumnmins(in)		in
+#define		dcolumnmins(in)		        in
 #define		dmatlabmins(in)			in
+
+/*
+** \brief Sum of a scalar element, just returns it
+*/
+#define	        u8mmins(in)			(uint8)in
+#define		u8rowmins(in)		        (uint8)in
+#define		u8columnmins(in)		(uint8)in
+#define		u8matlabmins(in)		(uint8)in
+#define		u16mins(in)			(uint16)in
+#define		u16rowmins(in)		        (uint16)in
+#define		u16columnmins(in)		(uint16)in
+#define		u16matlabmins(in)		(uint16)in
+#define		i8mins(in)			(int8)in
+#define		i8rowmins(in)		        (int8)in
+#define		i8columnmins(in)		(int8)in
+#define		i8matlabmins(in)		(int8)in
+#define		i16mins(in)			(int16)in
+#define		i16rowmins(in)		        (int16)in
+#define		i16columnmins(in)		(int16)in
+#define		i16matlabmins(in)		(int16)in
 
 /*
 ** \brief Sum of a float array

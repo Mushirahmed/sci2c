@@ -12,8 +12,10 @@
 
 #ifndef __STAT_MAX_H__
 #define __STAT_MAX_H__
-
+//#ifndef __MAX_H__
+//#define __MAX_H__
 #include "dynlib_statisticsfunctions.h"
+#include "types.h"
 
 #ifdef  __cplusplus
 extern "C" {
@@ -38,22 +40,22 @@ extern "C" {
 /*
 ** \brief Sum of a scalar element, just returns it
 */
-/*#define		uint8maxs(in)			(uint8)in
-#define		uint8rowmaxs(in)		(uint8)in
-#define		uint8columnmaxs(in)		(uint8)in
-#define		uint8matlabmaxs(in)		(uint8)in
-#define		uint16maxs(in)			(uint16)in
-#define		uint16rowmaxs(in)		(uint16)in
-#define		uint16columnmaxs(in)		(uint16)in
-#define		uint16matlabmaxs(in)		(uint16)in
-#define		int8maxs(in)			(int8)in
-#define		int8rowmaxs(in)		        (int8)in
-#define		int8columnmaxs(in)		(int8)in
-#define		int8matlabmaxs(in)		(int8)in
-#define		int16maxs(in)			(int16)in
-#define		int16rowmaxs(in)		(int16)in
-#define		int16columnmaxs(in)		(int16)in
-#define		int16matlabmaxs(in)		(int16)in*/
+#define	        u8maxs(in)			(uint8)in
+#define		u8rowmaxs(in)		        (uint8)in
+#define		u8columnmaxs(in)		(uint8)in
+#define		u8matlabmaxs(in)		(uint8)in
+#define		u16maxs(in)			(uint16)in
+#define		u16rowmaxs(in)		        (uint16)in
+#define		u16columnmaxs(in)		(uint16)in
+#define		u16matlabmaxs(in)		(uint16)in
+#define		i8maxs(in)			(int8)in
+#define		i8rowmaxs(in)		        (int8)in
+#define		i8columnmaxs(in)		(int8)in
+#define		i8matlabmaxs(in)		(int8)in
+#define		i16maxs(in)			(int16)in
+#define		i16rowmaxs(in)		        (int16)in
+#define		i16columnmaxs(in)		(int16)in
+#define		i16matlabmaxs(in)		(int16)in
 
 
 
