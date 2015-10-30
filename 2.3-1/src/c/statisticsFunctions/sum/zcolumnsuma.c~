@@ -12,23 +12,22 @@
 
 #include "sum.h"
 
-void i16rowsuma(int16 *in, int lines, int columns, int16 * out) {
+void zcolumnsuma(doubleComplex *in, int lines, int columns, doubleComplex * out) {
   int i = 0;
 
   /*
   ** First assign first row, just in case
   ** out contains non-zero's elements.
   */
-  for (i = 0 ; i < columns; ++i)
+  for (i = 0 ; i < lines; ++i)
     {
-      out[i] = (int16)in[i * lines];
+      out[i] = in[i];
     }
   /*
-  ** Then accumulate in each column.
+  ** Then accumulate in each row.
   */
-  for (i = 1 ; i <= (lines - 1) * columns ; ++i)
+  for (i = lines ; i < lines * columns ; ++i)
     {
-      out[(i - 1) % columns] = (int16)i16adds( out[(i - 1) % columns] ,
-				      in[((i - 1) % columns) * lines + 1 + (i - 1) / columns]);
+      out[i % lines] = zadds(out[i % lines] , in[i]);
     }
 }

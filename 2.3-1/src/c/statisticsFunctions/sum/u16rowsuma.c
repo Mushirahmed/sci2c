@@ -12,7 +12,7 @@
 
 #include "sum.h"
 
-void uint16rowsuma(uint16 *in, int lines, int columns, uint16 * out) {
+void u16rowsuma(uint16 *in, int lines, int columns, uint16 * out) {
   int i = 0;
 
   /*

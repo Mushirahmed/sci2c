@@ -12,7 +12,7 @@
 
 #include "sum.h"
 
-void uint8columnsuma(uint8 *in, int lines, int columns, uint8 * out) {
+void u8columnsuma(uint8 *in, int lines, int columns, uint8 * out) {
   int i = 0;
 
   /*
