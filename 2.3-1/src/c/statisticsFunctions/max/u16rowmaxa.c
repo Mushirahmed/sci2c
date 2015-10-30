@@ -9,8 +9,8 @@
  *  http://www.cecill.info/licences/Licence_CeCILL_V2-en.txt
  *
  */
-
 #include "statMax.h"
+//#include "max.h"
 
 void u16rowmaxa(uint16 *in, int rows, int columns, uint16* out) {
   int i = 0, j = 0;

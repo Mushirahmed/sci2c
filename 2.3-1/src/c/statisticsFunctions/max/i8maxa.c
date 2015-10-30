@@ -9,8 +9,8 @@
  *  http://www.cecill.info/licences/Licence_CeCILL_V2-en.txt
  *
  */
-
 #include "statMax.h"
+//#include "max.h"
 
 int8 i8maxa(int8 *in, int size) {
   int8 out = in[0];
@@ -18,7 +18,8 @@ int8 i8maxa(int8 *in, int size) {
 
   for (i = 1; i < size; ++i)
     {
-      if (in[i]>out) out = (int8)in[i];
+      if (in[i]>out) 
+        out = (int8)in[i];
     }
   return out;
 

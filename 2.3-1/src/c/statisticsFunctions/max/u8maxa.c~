@@ -11,6 +11,7 @@
  */
 
 #include "statMax.h"
+//#include "max.h"
 
 uint8 u8maxa(uint8 *in, int size) {
   uint8 out = in[0];
@@ -18,7 +19,8 @@ uint8 u8maxa(uint8 *in, int size) {
 
   for (i = 1; i < size; ++i)
     {
-      if (in[i]>out) out = (uint8)in[i];
+      if (in[i]>out) 
+        out = (uint8)in[i];
     }
   return out;
 

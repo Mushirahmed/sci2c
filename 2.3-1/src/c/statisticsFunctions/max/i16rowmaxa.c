@@ -11,13 +11,15 @@
  */
 
 #include "statMax.h"
+//#include "max.h"
 
 void i16rowmaxa(int16 *in, int rows, int columns, int16* out) {
   int i = 0, j = 0;
 
   for (i = 0; i < columns; i++) {
-	  out[i]=in[i*rows];
+	  out[i]=(int16)in[i*rows];
 	  for (j = 1 ; j < rows ; j++)
-     		 if (in[i*rows+j]>out[i]) out[i] = (int16)in[i*rows+j];
+     		 if (in[i*rows+j]>out[i])
+                     out[i] = (int16)in[i*rows+j];
     }
 }
