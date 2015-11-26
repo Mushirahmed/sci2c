@@ -126,43 +126,7 @@ elseif ((in1type == 'g') & (in2type == 'g'))
    end
    disp("Outside 4th if condition");
 disp("Going to Inside 2nd elseif condition");
-//elseif ((in1type == 'g') | (in2type == 'g'))
-//    disp("Inside 2nd elseif condition");
-//    if (isnum(in1size(2)) & isnum(in2size(2)))
-//     disp("Inside 1st if condtion of 2nd elseif");
-//     in1num = eval(in1size(2));
-//     disp(in1num,"Inside 2nd elseif condition in1num is  : ");
-//     in2num = eval(in2size(2));
-//     disp(in2num,"Inside 2nd elseif condition in2num is  : ");
-//     opoutsize(2) = string(in1num+in2num);
-//     disp(opoutsize(2),"Final Oputsize(2)  without casting to String : ");
-//     if isnan(opoutsize(2))
-//        disp("Inside 2nd if condition of 2nd elseif");
-//        opoutsize(2) = '__SCI2CNANSIZE';
-//        disp(opoutsize(2),"Opoutsize(2) is when it is not a Number : ");  
-//      else
-//         opoutsize(2) = string(opoutsize(2));
-//         disp(opoutsize(2),"Opoutsize(2) is casting to String : ");
-//      end
-//      disp("Outside 2nd if condition of 2nd elseif");
-//   else
-//      opoutsize(2) = '('+string(in1size(2))+'+'+string(in2size(2))+')';
-//      disp(opoutsize(2),"Final Opoutsize(2) casting to String :  ")
-//   end
-//   disp("Outside 1st if condition of 2nd elseif");
-//disp("Going to Inside 3rd elseif condition");
-//elseif ((in1type == 'g') & (in2type == 'g'))
-//   disp("Inside 3rd elseif condition");
-//   opoutsize(1) = FA_SZ_OPPLUSA(in1size,in2size)+1;
-//   in1size = string(in1size);
-//   in2size = string(in2size);
-//   in1num = eval(in1size(1));
-//   disp(in1num,"Inside 3rd elseif condition in1num is  : ");
-//   in2num = eval(in2size(1));
-//   disp(in2num,"Inside 3rd elseif condition in2num is  : ");
-//   opoutsize(2) = string(in1num+in2num);
-//   disp(opoutsize(2),'Opoutsize in 3rd elseif is : ');
-//   disp("Outside 3rd elseif statement");  
+
 elseif (in2type == 'g')
     disp("Inside 4th elseif condition");
     if (isnum(in2size(2)))
@@ -177,25 +141,8 @@ elseif (in2type == 'g')
             disp(opoutsize(1),"opoutsize inside 1st Else condition of 4th elseif : ");
         end
      disp("OutSide of 1st if condition of 4th elseif");
-     //disp("Inside 1st if condtion of 4th elseif");
-     //in2num = eval(in2size(2));
-     //disp(in2num,"Inside 2nd elseif condition in2num is  : ");
-     //opoutsize(2) = string(in2num);
-     //disp(opoutsize(2),"Final Oputsize(2)  without casting to String : ");
-     //if isnan(opoutsize(2) & opoutsize(1))
-     //   disp("Inside 2nd if condition of 4th elseif");
-     //   opoutsize(2) = '__SCI2CNANSIZE';
-     //   opoutsize(1) = '__SCI2CNANSIZE';
-     //   disp(opoutsize(2),"Opoutsize(2) is when it is Not A Number  : "); 
-     //   disp(opoutsize(1),"Oputsize(1) is when it is Not A Number  : "); 
-     //else
-     //   opoutsize(2) = string(opoutsize(2));
-     //    opoutsize(1) = string(opoutsize(1));
-     //    disp(opoutsize(2),"Opoutsize(2) is when it is Not A Number : ");
-     //    disp(opoutsize(1),"Opoutsize(1) is when it is Not A Number : ");
-     // end
-      disp("Outside 2nd if condition of 4th elseif");
-   else
+    
+    else
         disp("Inside else condition of 4th else")
         if(in2size(2) == 3)
            opoutsize(2) = '('+string(in1size(2))+')';
