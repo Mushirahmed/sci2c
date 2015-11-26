@@ -119,7 +119,42 @@
 #define i160i162maxi162(in1,in2,size,out)		{int i;\
 							for (i=0;i<size[0]*size[1];i++) out[i]=max(in1,in2[i]);\
 							}
+
+/*'r'  and 'c' case  */	
+#define s0g2maxs0(in1,in2,size2)			(in2[0]=='r') ? srowmaxs(in1) : scolumnmaxs(in1)	
+
+#define d0g2maxd0(in1,in2,size2)			(in2[0]=='r') ? drowmaxs(in1) : dcolumnmaxs(in1)	
+
+#define c0g2maxc0(in1,in2,size2)			(in2[0]=='r') ? crowmaxs(in1) : ccolumnmaxs(in1)	
+
+#define z0g2maxz0(in1,in2,size2)			(in2[0]=='r') ? zrowmaxs(in1) : zcolumnmaxs(in1)
+
+#define u80g2maxu80(in1,in2,size2)			(in2[0]=='r') ? u8rowmaxs(in1) : u8columnmaxs(in1)
+
+#define u160g2maxu160(in1,in2,size2)			(in2[0]=='r') ? u16rowmaxs(in1) : u16columnmaxs(in1)
+
+#define i80g2maxi80(in1,in2,size2)			(in2[0]=='r') ? i8rowmaxs(in1) : i8columnmaxs(in1)
+
+#define i160g2maxi160(in1,in2,size2)			(in2[0]=='r') ? i16rowmaxs(in1) : i16columnmaxs(in1)	
 	
+
+#define s2g2maxs2(in1,size1,in2,size2,out)		(in2[0]=='r') ? srowmaxa(in1,size1[0],size1[1],out) : scolumnmaxa(in1,size1[0],size1[1],out)	
+
+#define d2g2maxd2(in1,size1,in2,size2,out)		(in2[0]=='r') ? drowmaxa(in1,size1[0],size1[1],out) : dcolumnmaxa(in1,size1[0],size1[1],out)
+
+#define c2g2maxc2(in1,size1,in2,size2,out)		(in2[0]=='r') ? crowmaxa(in1,size1[0],size1[1],out) : ccolumnmaxa(in1,size1[0],size1[1],out)
+
+#define z2g2maxz2(in1,size1,in2,size2,out)		(in2[0]=='r') ? zrowmaxa(in1,size1[0],size1[1],out) : zcolumnmaxa(in1,size1[0],size1[1],out)	
+
+#define u82g2maxu82(in1,size1,in2,size2,out)		(in2[0]=='r') ? u8rowmaxa(in1,size1[0],size1[1],out) : u8columnmaxa(in1,size1[0],size1[1],out)	
+
+#define u162g2maxu162(in1,size1,in2,size2,out)		(in2[0]=='r') ? u16rowmaxa(in1,size1[0],size1[1],out) : u16columnmaxa(in1,size1[0],size1[1],out)
+	
+#define i82g2maxi82(in1,size1,in2,size2,out)		(in2[0]=='r') ? i8rowmaxa(in1,size1[0],size1[1],out) : i8columnmaxa(in1,size1[0],size1[1],out)	
+
+#define i162g2maxi162(in1,size1,in2,size2,out)		(in2[0]=='r') ? i16rowmaxa(in1,size1[0],size1[1],out) : i16columnmaxa(in1,size1[0],size1[1],out)
+
+
 	
 
 
