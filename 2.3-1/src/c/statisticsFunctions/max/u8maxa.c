@@ -12,7 +12,6 @@
 
 #include "statMax.h"
 //#include "max.h"
-
 uint8 u8maxa(uint8 *in, int size) {
   uint8 out = in[0];
   int i = 0;

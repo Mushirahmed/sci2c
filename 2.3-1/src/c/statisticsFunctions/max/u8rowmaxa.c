@@ -14,11 +14,15 @@
 
 void u8rowmaxa(uint8 *in, int rows, int columns, uint8* out) {
   int i = 0, j = 0;
+ 
 
-  for (i = 0; i < columns; i++) {
-	  out[i]=(uint8)in[i*rows];
-	  for (j = 1 ; j < rows ; j++)
-     		 if (in[i*rows+j]>out[i])
-                   out[i] = (uint8)in[i*rows+j];
+  for (i = 0; i < columns; i++) 
+     {
+	  out[i]=(uint8)in[0];
+	  for (j = 0 ; j < rows ; j++)
+             {
+     		 if (in[j]>out[i])
+                   out[i] = (uint8)in[j];
+             }
     }
 }

@@ -10,14 +10,20 @@
  *
  */
 #include "statMax.h"
+//#include <stdlib.h>
 //#include "max.h"
 
 void u16rowmaxa(uint16 *in, int rows, int columns, uint16* out) {
   int i = 0, j = 0;
-
-  for (i = 0; i < columns; i++) {
-	  out[i]=in[i*rows];
+  //out = malloc(columns*sizeof(uint16));
+  for (i = 0; i < columns; i++) 
+      {
+	  out[i]=(uint16)in[i];
 	  for (j = 1 ; j < rows ; j++)
-     		 if (in[i*rows+j]>out[i]) out[i] = (uint16)in[i*rows+j];
-    }
+              {
+     		 if (in[j*columns+i]>out[i]) 
+                    out[i] = (uint16)in[j*columns+i];
+              }
+      }
+  
 }
