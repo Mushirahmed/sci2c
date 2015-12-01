@@ -21,7 +21,7 @@ void u16transposea ( uint16* in , int lines , int columns, uint16* out ){
 	{
 		for(j = 0 ; j <  columns ; j++)
 
-		(uint16)out[j+i*columns]	= (uint16)in[i+j*lines];
+		out[j+i*columns] = (uint16)in[i+j*lines];
 	}
 	
 }

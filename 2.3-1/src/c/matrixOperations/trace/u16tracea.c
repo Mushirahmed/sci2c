@@ -12,7 +12,7 @@
 
 #include "matrixTrace.h"
 
-uint16 u16tracea ( uint8* in ,int lines){
+uint16 u16tracea ( uint16* in ,int lines){
     
     
     int i = 0 ;
@@ -20,7 +20,7 @@ uint16 u16tracea ( uint8* in ,int lines){
     uint16 out = 0;
     
     for (  i = 0 ; i < lines ; ++i)
-        (uint16)out += (uint16)in[i*lines + i] ;
+        out += (uint16)in[i*lines + i] ;
     
     return out;
 }

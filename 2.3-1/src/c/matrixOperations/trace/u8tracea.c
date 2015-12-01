@@ -20,7 +20,7 @@ uint8 u8tracea ( uint8* in ,int lines){
     uint8 out = 0;
     
     for (  i = 0 ; i < lines ; ++i)
-        (uint8)out += (uint8)in[i*lines + i] ;
+        out += (uint8)in[i*lines + i] ;
     
     return out;
 }

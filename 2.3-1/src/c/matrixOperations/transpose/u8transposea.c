@@ -21,7 +21,7 @@ void u8transposea ( uint8* in , int lines , int columns, uint8* out ){
 	{
 		for(j = 0 ; j <  columns ; j++)
 
-		(uint8)out[j+i*columns]	= (uint8)in[i+j*lines];
+		out[j+i*columns] = (uint8)in[i+j*lines];
 	}
 	
 }

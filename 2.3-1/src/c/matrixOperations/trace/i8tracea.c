@@ -20,7 +20,7 @@ int8 i8tracea ( int8* in ,int lines){
     int8 out = 0;
     
     for (  i = 0 ; i < lines ; ++i)
-        (int8)out += (int8)in[i*lines + i] ;
+        out += (int8)in[i*lines + i] ;
     
     return out;
 }

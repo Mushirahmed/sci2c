@@ -20,7 +20,7 @@ int16 i16tracea ( int16* in ,int lines){
     int16 out = 0;
     
     for (  i = 0 ; i < lines ; ++i)
-        (int16)out += (int16)in[i*lines + i] ;
+        out += (int16)in[i*lines + i] ;
     
     return out;
 }
